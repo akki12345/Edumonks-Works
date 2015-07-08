@@ -1,0 +1,189 @@
+/* Card*/
+.ui.cards > .card,
+.ui.card {
+  max-width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 290px;
+  min-height: 0px;
+  background: #ffffff;
+  padding: 0em;
+  border: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 1px 3px 0px #d4d4d5, 0px 0px 0px 1px #d4d4d5;
+  -webkit-transition: box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  z-index: '';
+}
+
+/* Cards */
+.ui.cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -0.875em -0.5em;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.ui.cards > .card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.875em 0.5em;
+  float: none;
+}
+
+/* Clearing */
+.ui.cards:after,
+.ui.card:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Images */
+.ui.cards > .card > .image,
+.ui.card > .image {
+  position: relative;
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 0em;
+  background: rgba(0, 0, 0, 0.05);
+}
+.ui.cards > .card > .image > img,
+.ui.card > .image > img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  border-radius: inherit;
+}
+.ui.cards > .card > .image:not(.ui) > img,
+.ui.card > .image:not(.ui) > img {
+  border: none;
+}
+
+/* Content */
+.ui.cards > .card > .content,
+.ui.card > .content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  background: none;
+  margin: 0em;
+  padding: 1em 1em;
+  box-shadow: none;
+  font-size: 1em;
+  border-radius: 0em;
+}
+.ui.cards > .card > .content:after,
+.ui.card > .content:after {
+  display: block;
+  content: ' ';
+  height: 0px;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.ui.cards > .card > .content > .header,
+.ui.card > .content > .header {
+  display: block;
+  margin: '';
+  color: #4169E1; 
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/* Default Header Size */
+.ui.cards > .card > .content > .header:not(.ui),
+.ui.card > .content > .header:not(.ui) {
+  font-weight: bold;
+  font-color:#B0E0E6; 
+  font-size: 1.28571429em;
+  margin-top: -0.21425em;
+  line-height: 1.2857em;
+}
+
+/* distance */
+.distance {
+  margin-top: 18px;
+}
+
+/* Floated Content */
+.ui.cards > .card [class*="right floated"],
+.ui.card [class*="right floated"] {
+  float: right;
+  color: #4169E1;
+}
+
+/* Description */
+.ui.cards > .card > .content > .description,
+.ui.card > .content > .description {
+  clear: both;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+/* Extra Content */
+.ui.cards > .card > .extra,
+.ui.card > .extra {
+  max-width: 100%;
+  min-height: 0em !important;
+   -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+          flex-grow: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  position: static;
+  background: none;
+  width: auto;
+  margin: 0em 0em;
+  padding: 0.75em 1em;
+  top: 0em;
+  left: 0em;
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+  -webkit-transition: color 0.1s ease;
+          transition: color 0.1s ease;
+}
+
+/* Link */
+.ui.cards a.card,
+.ui.link.cards .card,
+a.ui.card,
+.ui.link.card {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.ui.cards a.card:hover,
+.ui.link.cards .card:hover,
+a.ui.card:hover,
+.ui.link.card:hover {
+  cursor: pointer;
+  z-index: 5;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 1px 3px 0px #bcbdbd, 0px 0px 0px 1px #d4d4d5;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
